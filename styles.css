@@ -82,14 +82,15 @@ body {
 /* hero section */
 
 .profile_img {
-  height: 100px;
-  width: 100px;
-  border-radius: 70%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
   /* width: 100%; */
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  -webkit-mask-repeat: no-repeat;
+  background-repeat: no-repeat;
+  /* -webkit-mask-repeat: no-repeat; */
 }
 
 .section {
@@ -103,7 +104,7 @@ body {
 /* } */
 .hero-contact {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -151,7 +152,7 @@ body {
 
 .socials a {
   text-decoration: none;
-  color: #777778;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -191,10 +192,10 @@ figcaption h2 {
 figcaption h4 {
   color: #fff;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 figcaption p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 50px;
 }
 figcaption span a {
@@ -368,7 +369,7 @@ textarea {
 }
 .sub-icon--contact a{
   text-decoration: none;
-  color: #777778;
+  color: #fff;
   font-size: 1.5rem;
 
 }
@@ -378,7 +379,7 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #777778;
+  color: #fff;
 
 }
 
@@ -422,7 +423,7 @@ footer a {
   }
   .sub-icon a {
     text-decoration: none;
-    color: #777778;
+    color: #fff;
     font-size: 1.5rem;
   }
   .socials {
@@ -516,14 +517,18 @@ footer a {
   }
   .work-heading h2 {
     font-size: 2rem;
+    color: #777778;
     font-weight: 600;
   }
   footer p {
     font-size: 1.5rem;
     padding: 0px;
   }
+  footer a{
+    color: #fff;
+  }
   .home--footer a {
-    color: #777778;
+    color: #fff;
     text-decoration: none;
   }
   .form-container {
@@ -540,7 +545,7 @@ footer a {
   }
   .sub-icon--contact a{
     text-decoration: none;
-    color: #777778;
+    color: #fff;
     font-size: 1.5rem;
 
   }
