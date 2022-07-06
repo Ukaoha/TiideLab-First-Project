@@ -134,6 +134,32 @@ body {
   margin-top: 20px;
   color: #fff;
 }
+.work{
+  animation: wiggle 3s linear infinite;
+}
+@keyframes wiggle {
+  0% , 7%{
+    transform: rotateZ(0);
+  }
+  15%{
+    transform: rotateZ(-15deg);
+  }
+  20%{
+    transform: rotateZ(10deg);
+  }
+  25%{
+    transform: rotateZ(-10deg);
+  }
+  30%{
+    transform: rotateZ(6deg);
+  }
+  35%{
+    transform: rotateZ(-4deg);
+  }
+  40% , 100%{
+    transform: rotateZ(0);
+  }
+}
 .work i {
   margin-left: 5px;
 }
@@ -382,6 +408,48 @@ footer a {
   color: #fff;
 
 }
+ .tiidelab--meetup { 
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* grid-column-gap: 0px; */
+  /* grid-row-gap: 10px; */
+  
+ } 
+
+
+ .experience--box { 
+padding: 2rem;
+border-radius: 0.5rem;
+transition: transform 3s, ease-in-out;
+margin: 1rem 0;
+ 
+/* background-color: #121212; */
+
+ /* background-color: rgb(32 32 34 / var(--tw-bg-opacity));  */
+ width: 100%; 
+}
+ figure{ 
+margin: 0;
+padding: 0;
+}
+.experience--box .tiidelab-img{
+height: 300px;
+width: 100%;
+object-fit: cover;
+display: block;
+}
+.experience--box figure figcaption  {
+  font-size: 1.5rem;
+  color:#fff;
+  padding: 1rem;
+  background-color: #777778;
+}
+ 
+
+
 
 /* media queries */
 /* about */
@@ -413,6 +481,11 @@ footer a {
     display: flex;
     align-items: flex-start;
     -webkit-mask-repeat: no-repeat;
+  }
+  .experience--heading{
+color: #777778;
+font-size: 2rem;
+padding: 1rem;
   }
   .sub-icon {
     /* width: 90%; */
@@ -549,5 +622,64 @@ footer a {
     font-size: 1.5rem;
 
   }
+
+  /* about tiidelab experience */
+   .tiidelab--meetup {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    
+  }
+
+
+.experience--box {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: transform 3s, ease-in-out;
+  margin: 1rem 0;
+  /* background-color: #121212; */
+
+  /* background-color: rgb(32 32 34 / var(--tw-bg-opacity)); */
+  width: 100%;
+}
+ figure{ 
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.experience--box .tiidelab-img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 999;
+  transition: transform 0.4s;
+}
+.experience--box figure:hover img{
+  transform: translateY(-90px);
+}
+.experience--box:nth-child(1){
+  grid-template-columns: 1/ span 3;
+}
+
+.experience--box figure figcaption  {
+  font-size: 1.5rem;
+  color:#fff;
+  padding: 1rem;
+  background-color: #777778;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+}
+
+
   
 }
